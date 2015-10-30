@@ -12,6 +12,7 @@ app = Flask(__name__, template_folder=os.getcwd())
 if transport_security is True:
     from flask_sslify import SSLify
     sslify = SSLify(app)
+    import ssl
 
 ##ERROR & Robots
 @app.errorhandler(404)
